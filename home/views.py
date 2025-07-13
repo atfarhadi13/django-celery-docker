@@ -7,7 +7,7 @@ from celery import shared_task
 @shared_task
 def my_task():
     time.sleep(10)
-    open('output_ibe.txt', 'w').close()
+    open('output_ibe_one.txt', 'w').close()
 
 def home(request):
     print(my_task)
